@@ -23,12 +23,12 @@ app.get("/", (req, res) =>
 );
 
 //api routes
-app.get("api/todos", (req, res) => res.json([{ title: "buy milk" }]));
+// app.get("api/todos", (req, res) => res.json([{ title: "buy milk" }]));
 
 //404 route
-app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "public/404.html"))
-);
+// app.get("*", (req, res) =>
+//   res.sendFile(path.join(__dirname, "public/404.html"))
+// );
 
 // START SERVER
 app.listen(PORT, () => console.log(`Server live on ${PORT}`));
