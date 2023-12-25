@@ -66,6 +66,10 @@ notes.delete("/:note_id", (req, res) => {
       return;
     }
   }
+  //if there is only one note in the file notes.json, it will delete that one
+  if (notesDB.length === 0 && noteId === notesDB[0]) {
+    readAndDelete(0, "./db/notes.json");
+  }
 });
 
 module.exports = notes;
