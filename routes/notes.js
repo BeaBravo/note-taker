@@ -11,10 +11,12 @@ notes.get("/", (req, res) => {
 // POST route for a new note
 notes.post("/", (req, res) => {
   console.info(`${req.method} request received for notes`);
+  const note = req.body;
   //append to notes db and create a new object with a unique ID
   const newNote = {
     id: uuidv4(),
-    note: req.body,
+    title: note.title,
+    text: note.text,
   };
   res.json(newNote);
   readAndAppend(newNote, "./db/notes.json");

@@ -36,6 +36,5 @@ app.get("/notes", (req, res) =>
 //   res.sendFile(path.join(__dirname, "public/404.html"))
 // );
 
-
 // START SERVER
 app.listen(PORT, () => console.log(`Server live on ${PORT}`));
