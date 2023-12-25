@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "id": "a1aa8325-d723-4c16-ac7e-6a9769837e3c",
+        "title": "note title",
+        "text": "text"
+    },
+    {
+        "id": "cfac5310-280f-4107-923a-7e7abdf52e17",
+        "title": "title2",
+        "text": "text2"
+    }
+]
